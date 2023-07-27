@@ -6,6 +6,7 @@ use Calculator\BasicCalculator;
 class calculatorTest extends PHPUnit\Framework\TestCase
 {
     /**
+     * @test
      * @covers Calculator\BasicCalculator
     */
     public function testAdd()
