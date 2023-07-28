@@ -54,4 +54,12 @@ class calculatorTest extends PHPUnit\Framework\TestCase
         $this->assertEquals(BasicCalculator::divide(-4, 2.0), -2.0);
         $this->assertEquals(BasicCalculator::divide(2.0, 0), 'Cannot divide by 0');
     }
+
+    /**
+     * @covers Calculator\BasicCalculator
+     */
+    public function testMod()
+    {
+        $this->assertEquals(BasicCalculator::mod(2, 2), 0);
+    }
 }
