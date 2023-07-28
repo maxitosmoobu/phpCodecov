@@ -27,4 +27,9 @@ class BasicCalculator
     {
         return $x % $y;
     }
+
+    public function testUnusedFunction()
+    {
+        $testVariable = 0;
+    }
 }
