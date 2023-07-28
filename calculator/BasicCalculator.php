@@ -25,7 +25,7 @@ class BasicCalculator
         return $x / $y;
     }
 
-    public function testFunction(): void
+    public function testFunction(): int
     {
         return 1;
     }
