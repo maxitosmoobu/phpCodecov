@@ -4,14 +4,17 @@ namespace Calculator;
 class BasicCalculator
 {
     public static function add(float $x, float $y) {
+        $unused = 1;
         return $x + $y;
     }
 
     public static function subtract(float $x, float $y) {
+        $undefined;
         return $x - $y;
     }
 
     public static function multiply(float $x, float $y) {
+        (float) $test = 1;
         return $x * $y;
     }
 
@@ -20,5 +23,10 @@ class BasicCalculator
             return 'Cannot divide by 0';
         }
         return $x / $y;
+    }
+
+    public function testFunction(): void
+    {
+        return 1;
     }
 }
