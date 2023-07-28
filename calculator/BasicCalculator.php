@@ -33,8 +33,14 @@ class BasicCalculator
         $testVariable = 0;
     }
 
-    public function testUnusedSecondFunction(float $x)
+    public function testUnusedSecondFunction(int $x)
     {
-        return 0 / $x;
+        if ($x) {
+            return 0 / $x;
+        } else if ($x !== 2) {
+            return $x * $x;
+        }
+
+        return $x;
     }
 }
