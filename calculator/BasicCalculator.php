@@ -22,4 +22,9 @@ class BasicCalculator
         }
         return $x / $y;
     }
+
+    public static function mod(float $x, float $y)
+    {
+        return $x % $y;
+    }
 }
