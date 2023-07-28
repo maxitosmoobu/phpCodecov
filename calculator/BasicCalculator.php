@@ -38,4 +38,9 @@ class BasicCalculator
 
         return $x;
     }
+
+    public function moreTest()
+    {
+        
+    }
 }
