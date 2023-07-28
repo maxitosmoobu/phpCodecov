@@ -1,6 +1,12 @@
 name: Code coverage and Static Analysis
 on:
+  # For Sonarcloud PR decoration to work, trigger must be pull_request.
+  # This is the most common way to trigger the sonarcloud flow.
   pull_request:
+    types: [ opened, synchronize, reopened ]
+  # For Sonarcloud to keep track of "main branch" to compare PRs against, we need to trigger SonarCloud on pushes to
+  # that branch.
+  push:
     branches:
       - main
 jobs:
