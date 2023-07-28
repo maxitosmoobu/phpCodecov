@@ -32,4 +32,9 @@ class BasicCalculator
     {
         $testVariable = 0;
     }
+
+    public function testUnusedSecondFunction(float $x)
+    {
+        return 0 / $x;
+    }
 }
