@@ -12,6 +12,7 @@ class BasicCalculator
     }
 
     public static function multiply(float $x, float $y) {
+        (float) $test = 1;
         return $x * $y;
     }
 
