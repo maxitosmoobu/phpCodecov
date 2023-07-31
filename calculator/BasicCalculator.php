@@ -23,4 +23,24 @@ class BasicCalculator
         return $x / $y;
     }
 
+    public function testUnusedFunction()
+    {
+        $testVariable = 0;
+    }
+
+    public function testUnusedSecondFunction(int $x)
+    {
+        if ($x) {
+            return 0 / $x;
+        } else if ($x !== 2) {
+            return $x * $x;
+        }
+
+        return $x;
+    }
+
+    public function moreTest()
+    {
+        // function number test
+    }
 }
